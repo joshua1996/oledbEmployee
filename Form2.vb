@@ -241,4 +241,8 @@
         form2EmployedId = DataGridView1.CurrentRow.Cells(1).Value
         Form5.ShowDialog()
     End Sub
+
+    Private Sub RegisterToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles RegisterToolStripMenuItem.Click
+        Form8.ShowDialog()
+    End Sub
 End Class

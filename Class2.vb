@@ -224,4 +224,84 @@
         End Try
     End Function
 #End Region
+
+#Region "employee login"
+    Public Function c2EmployeeLogin(ByVal employeeid As String, ByVal password As String) As Class3
+        Try
+            c3 = c1.c1EmployeeLogin(employeeid, password)
+            If c3.c3Dt.Rows.Count > 0 Then
+                c3.c3B = True
+            Else
+                c3.c3B = False
+            End If
+            Return c3
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Function
+#End Region
+
+#Region "admin login insert"
+    Public Function c2AdminLoginInsr(ByVal adminid As String, ByVal password As String) As Class3
+        Try
+            c3 = c1.c1AdminLoginInsr(adminid, password)
+            c3.c3B = True
+            Return c3
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Function
+#End Region
+
+#Region "admin fill"
+    Public Function c2AdminFill() As Class3
+        Try
+            c3 = c1.c1AdminFill()
+            If c3.c3Dt.Rows.Count > 0 Then
+                c3.c3B = True
+            Else
+                c3.c3B = False
+            End If
+            Return c3
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Function
+#End Region
+
+#Region "admin insert"
+    Public Function c2AdminInsr(ByVal adminid As String, ByVal password As String) As Class3
+        Try
+            c3 = c1.c1AdminInsr(adminid, password)
+            c3.c3B = True
+            Return c3
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Function
+#End Region
+
+#Region "admin upd"
+    Public Function c2AdminUpd(ByVal adminid As String, ByVal password As String, ByVal id As Integer) As Class3
+        Try
+            c3 = c1.c1AdminUpd(adminid, password, id)
+            c3.c3B = True
+            Return c3
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Function
+#End Region
+
+#Region "admin del"
+    Public Function c2AdminDel(ByVal adminid As String) As Class3
+        Try
+            c3 = c1.c1AdminDel(adminid)
+            c3.c3B = True
+            Return c3
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Function
+#End Region
 End Class

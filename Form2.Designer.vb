@@ -233,13 +233,13 @@ Partial Class Form2
         '
         Me.EployeeToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RegisterToolStripMenuItem})
         Me.EployeeToolStripMenuItem.Name = "EployeeToolStripMenuItem"
-        Me.EployeeToolStripMenuItem.Size = New System.Drawing.Size(60, 20)
-        Me.EployeeToolStripMenuItem.Text = "eployee"
+        Me.EployeeToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
+        Me.EployeeToolStripMenuItem.Text = "admin"
         '
         'RegisterToolStripMenuItem
         '
         Me.RegisterToolStripMenuItem.Name = "RegisterToolStripMenuItem"
-        Me.RegisterToolStripMenuItem.Size = New System.Drawing.Size(113, 22)
+        Me.RegisterToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.RegisterToolStripMenuItem.Text = "register"
         '
         'Button6

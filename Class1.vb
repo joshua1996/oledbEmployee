@@ -313,4 +313,112 @@ Public Class Class1
         End Try
     End Function
 #End Region
+
+#Region "employee login"
+    Public Function c1EmployeeLogin(ByVal employeeid As String, ByVal password As String) As Class3
+        Try
+            connect.Open()
+            Dim c1Adp As New OleDbDataAdapter("select * from employeelogin where employeeid='" + employeeid + "' and password='" + password + "'", connect)
+            Dim c1Dt As New DataTable
+            c1Adp.Fill(c1Dt)
+            c3.c3Dt = c1Dt
+            Return c3
+        Catch ex As Exception
+            Throw ex
+        Finally
+            connect.Close()
+        End Try
+    End Function
+#End Region
+
+#Region "admin login insr "
+    Public Function c1AdminLoginInsr(ByVal adminid As String, ByVal password As String) As Class3
+        Try
+            connect.Open()
+            Dim c1Cmd As New OleDbCommand("insert into adminlogin (adminid,[password]) values (@adminid,@password)", connect)
+            c1Cmd.Parameters.AddWithValue("@adminid", adminid)
+            c1Cmd.Parameters.AddWithValue("@password", password)
+            c1Cmd.ExecuteNonQuery()
+            '  c3.c3B = True
+            Return c3
+        Catch ex As Exception
+            Throw ex
+        Finally
+            connect.Close()
+        End Try
+    End Function
+#End Region
+
+#Region "admin fill"
+    Public Function c1AdminFill() As Class3
+        Try
+            connect.Open()
+            Dim c1Adp As New OleDbDataAdapter("select * from adminlogin", connect)
+            Dim c1Dt As New DataTable
+            c1Adp.Fill(c1Dt)
+            c3.c3Dt = c1Dt
+            Return c3
+        Catch ex As Exception
+            Throw ex
+        Finally
+            connect.Close()
+        End Try
+    End Function
+#End Region
+
+#Region "admin insr "
+    Public Function c1AdminInsr(ByVal adminid As String, ByVal password As String) As Class3
+        Try
+            connect.Open()
+            Dim c1Cmd As New OleDbCommand("insert into adminlogin (adminid,[password]) values (@adminid,@password)", connect)
+            c1Cmd.Parameters.AddWithValue("@adminid", adminid)
+            c1Cmd.Parameters.AddWithValue("@password", password)
+            ' c1Cmd.Parameters.AddWithValue("@leavedate", leave)
+            c1Cmd.ExecuteNonQuery()
+            '  c3.c3B = True
+            Return c3
+        Catch ex As Exception
+            Throw ex
+        Finally
+            connect.Close()
+        End Try
+    End Function
+#End Region
+
+#Region "admin upd "
+    Public Function c1AdminUpd(ByVal adminid As String, ByVal password As String, ByVal id As Integer) As Class3
+        Try
+            connect.Open()
+            Dim c1Cmd As New OleDbCommand("update adminlogin set adminid=@adminid,[password]=@password where id=@id", connect)
+            c1Cmd.Parameters.AddWithValue("@adminid", adminid)
+            c1Cmd.Parameters.AddWithValue("@password", password)
+            c1Cmd.Parameters.AddWithValue("@id", id)
+            c1Cmd.ExecuteNonQuery()
+            '  c3.c3B = True
+            Return c3
+        Catch ex As Exception
+            Throw ex
+        Finally
+            connect.Close()
+        End Try
+    End Function
+#End Region
+
+#Region "admin delete "
+    Public Function c1AdminDel(ByVal adminid As String) As Class3
+        Try
+            connect.Open()
+            Dim c1Cmd As New OleDbCommand("delete from adminlogin where adminid=@adminid ", connect)
+            c1Cmd.Parameters.AddWithValue("@adminid", adminid)
+            c1Cmd.ExecuteNonQuery()
+            '  c3.c3B = True
+            Return c3
+        Catch ex As Exception
+            Throw ex
+        Finally
+            connect.Close()
+        End Try
+    End Function
+#End Region
+
 End Class
