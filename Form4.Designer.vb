@@ -93,7 +93,7 @@ Partial Class Form4
         '
         Me.Panel3.Controls.Add(Me.Button5)
         Me.Panel3.Controls.Add(Me.Button4)
-        Me.Panel3.Location = New System.Drawing.Point(195, 340)
+        Me.Panel3.Location = New System.Drawing.Point(264, 316)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(208, 44)
         Me.Panel3.TabIndex = 12
@@ -118,14 +118,14 @@ Partial Class Form4
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(39, 340)
+        Me.TextBox1.Location = New System.Drawing.Point(24, 316)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(87, 20)
         Me.TextBox1.TabIndex = 13
         '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(53, 387)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(24, 390)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
         Me.DateTimePicker1.TabIndex = 14

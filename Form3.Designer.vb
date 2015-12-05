@@ -100,14 +100,14 @@ Partial Class Form3
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(16, 17)
+        Me.TextBox1.Location = New System.Drawing.Point(51, 381)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(100, 20)
         Me.TextBox1.TabIndex = 6
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(16, 59)
+        Me.TextBox2.Location = New System.Drawing.Point(17, 3)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(100, 20)
         Me.TextBox2.TabIndex = 7
@@ -115,10 +115,9 @@ Partial Class Form3
         'Panel2
         '
         Me.Panel2.Controls.Add(Me.TextBox2)
-        Me.Panel2.Controls.Add(Me.TextBox1)
-        Me.Panel2.Location = New System.Drawing.Point(34, 349)
+        Me.Panel2.Location = New System.Drawing.Point(34, 417)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(141, 100)
+        Me.Panel2.Size = New System.Drawing.Size(141, 32)
         Me.Panel2.TabIndex = 8
         '
         'Button4
@@ -163,6 +162,7 @@ Partial Class Form3
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(678, 513)
         Me.ControlBox = False
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
@@ -176,6 +176,7 @@ Partial Class Form3
         Me.Panel2.PerformLayout()
         Me.Panel3.ResumeLayout(False)
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView

@@ -142,9 +142,9 @@
 #End Region
 
 #Region "employee login insert"
-    Public Function c2EmployeeLoginInsr(ByVal employeeId As String) As Class3
+    Public Function c2EmployeeLoginInsr(ByVal employeeId As String, ByVal password As String) As Class3
         Try
-            c3 = c1.c1EmployeeLoginInsr(employeeId)
+            c3 = c1.c1EmployeeLoginInsr(employeeId, password)
             c3.c3B = True
             Return c3
         Catch ex As Exception
@@ -181,6 +181,42 @@
     Public Function c2EmployeeLoginDel(ByVal employeeid As String) As Class3
         Try
             c3 = c1.c1EmployeeLoginDel(employeeid)
+            c3.c3B = True
+            Return c3
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Function
+#End Region
+
+#Region "salary upd"
+    Public Function c2SalaryUpd(ByVal salary As String, ByVal id As Integer) As Class3
+        Try
+            c3 = c1.c1SalaryUpd(salary, id)
+            c3.c3B = True
+            Return c3
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Function
+#End Region
+
+#Region "leave upd"
+    Public Function c2LeaveUpd(ByVal leavedate As Date, ByVal id As Integer) As Class3
+        Try
+            c3 = c1.c1LeaveUpd(leavedate, id)
+            c3.c3B = True
+            Return c3
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Function
+#End Region
+
+#Region "employeelogin upd"
+    Public Function c2EmployeeLoginUpd(ByVal password As String, ByVal id As Integer) As Class3
+        Try
+            c3 = c1.c1EmployeeLoginUpd(password, id)
             c3.c3B = True
             Return c3
         Catch ex As Exception

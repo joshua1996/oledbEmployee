@@ -89,7 +89,8 @@
     Private Sub employeeLoginInsr()
         Try
             Dim employeeid As String = TextBox1.Text
-            c3 = c2.c2EmployeeLoginInsr(employeeid)
+            Dim password As String = ""
+            c3 = c2.c2EmployeeLoginInsr(employeeid, password)
         Catch ex As Exception
             Throw ex
         End Try

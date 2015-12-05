@@ -192,12 +192,12 @@ Public Class Class1
 #End Region
 
 #Region "employee login insr "
-    Public Function c1EmployeeLoginInsr(ByVal employeeId As String) As Class3
+    Public Function c1EmployeeLoginInsr(ByVal employeeId As String, ByVal password As String) As Class3
         Try
             connect.Open()
-            Dim c1Cmd As New OleDbCommand("insert into employeelogin (employeeid,[password]) values (@employeeid,null)", connect)
+            Dim c1Cmd As New OleDbCommand("insert into employeelogin (employeeid,[password]) values (@employeeid,@password)", connect)
             c1Cmd.Parameters.AddWithValue("@employeeid", employeeId)
-            ' c1Cmd.Parameters.AddWithValue("@leavedate", leave)
+            c1Cmd.Parameters.AddWithValue("@password", password)
             c1Cmd.ExecuteNonQuery()
             '  c3.c3B = True
             Return c3
@@ -249,6 +249,60 @@ Public Class Class1
             connect.Open()
             Dim c1Cmd As New OleDbCommand("delete from employeeLogin where employeeid=@employeeid ", connect)
             c1Cmd.Parameters.AddWithValue("@employeeid", employeeid)
+            c1Cmd.ExecuteNonQuery()
+            '  c3.c3B = True
+            Return c3
+        Catch ex As Exception
+            Throw ex
+        Finally
+            connect.Close()
+        End Try
+    End Function
+#End Region
+
+#Region "salary upd "
+    Public Function c1SalaryUpd(ByVal salary As String, ByVal id As Integer) As Class3
+        Try
+            connect.Open()
+            Dim c1Cmd As New OleDbCommand("update salary set salary=@salary where id=@id", connect)
+            c1Cmd.Parameters.AddWithValue("@salary", salary)
+            c1Cmd.Parameters.AddWithValue("@id", id)
+            c1Cmd.ExecuteNonQuery()
+            '  c3.c3B = True
+            Return c3
+        Catch ex As Exception
+            Throw ex
+        Finally
+            connect.Close()
+        End Try
+    End Function
+#End Region
+
+#Region "leave upd "
+    Public Function c1LeaveUpd(ByVal leavedate As Date, ByVal id As Integer) As Class3
+        Try
+            connect.Open()
+            Dim c1Cmd As New OleDbCommand("update leave set leavedate=@leavedate where id=@id", connect)
+            c1Cmd.Parameters.AddWithValue("@leavedate", leavedate)
+            c1Cmd.Parameters.AddWithValue("@id", id)
+            c1Cmd.ExecuteNonQuery()
+            '  c3.c3B = True
+            Return c3
+        Catch ex As Exception
+            Throw ex
+        Finally
+            connect.Close()
+        End Try
+    End Function
+#End Region
+
+#Region "employeeLogin upd "
+    Public Function c1EmployeeLoginUpd(ByVal password As String, ByVal id As Integer) As Class3
+        Try
+            connect.Open()
+            Dim c1Cmd As New OleDbCommand("update employeelogin set [password]=@password where id=@id", connect)
+            c1Cmd.Parameters.AddWithValue("@password", password)
+            c1Cmd.Parameters.AddWithValue("@id", id)
             c1Cmd.ExecuteNonQuery()
             '  c3.c3B = True
             Return c3
