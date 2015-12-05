@@ -1,0 +1,14 @@
+c:\users\msi\documents\visual studio 2010\Projects\oledbEmployee\oledbEmployee\bin\Debug\oledbEmployee.exe
+c:\users\msi\documents\visual studio 2010\Projects\oledbEmployee\oledbEmployee\bin\Debug\oledbEmployee.pdb
+c:\users\msi\documents\visual studio 2010\Projects\oledbEmployee\oledbEmployee\bin\Debug\oledbEmployee.xml
+c:\users\msi\documents\visual studio 2010\Projects\oledbEmployee\oledbEmployee\obj\x86\Debug\oledbEmployee.Form1.resources
+c:\users\msi\documents\visual studio 2010\Projects\oledbEmployee\oledbEmployee\obj\x86\Debug\oledbEmployee.Form2.resources
+c:\users\msi\documents\visual studio 2010\Projects\oledbEmployee\oledbEmployee\obj\x86\Debug\oledbEmployee.Resources.resources
+c:\users\msi\documents\visual studio 2010\Projects\oledbEmployee\oledbEmployee\obj\x86\Debug\oledbEmployee.vbproj.GenerateResource.Cache
+c:\users\msi\documents\visual studio 2010\Projects\oledbEmployee\oledbEmployee\obj\x86\Debug\oledbEmployee.exe
+c:\users\msi\documents\visual studio 2010\Projects\oledbEmployee\oledbEmployee\obj\x86\Debug\oledbEmployee.xml
+c:\users\msi\documents\visual studio 2010\Projects\oledbEmployee\oledbEmployee\obj\x86\Debug\oledbEmployee.pdb
+C:\Users\MSI\Documents\Visual Studio 2010\Projects\oledbEmployee\oledbEmployee\obj\x86\Debug\oledbEmployee.Form3.resources
+C:\Users\MSI\Documents\Visual Studio 2010\Projects\oledbEmployee\oledbEmployee\obj\x86\Debug\oledbEmployee.Form4.resources
+C:\Users\MSI\Documents\Visual Studio 2010\Projects\oledbEmployee\oledbEmployee\obj\x86\Debug\oledbEmployee.Form5.resources
+C:\Users\MSI\Documents\Visual Studio 2010\Projects\oledbEmployee\oledbEmployee\obj\x86\Debug\oledbEmployee.Form6.resources
